@@ -11,7 +11,7 @@ def sent_detector():
     response = emotion_detector(text_to_analyze)
 
     if response['dominant_emotion'] is None:
-        return "The given text argument is invalid. Please try again!"
+        return "Invalid input! Try again!"
 
     return (
         f"For the given statement, the system response is "
